@@ -1,6 +1,5 @@
 let inputDisplay = document.getElementById('inputDisplay');
 let resultDisplay = document.getElementById('resultDisplay');
-let res = '';
 
 function appendToDisplay(value) {
     inputDisplay.value += value;
