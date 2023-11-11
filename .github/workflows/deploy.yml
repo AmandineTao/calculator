@@ -1,6 +1,6 @@
 # This workflow will build a static web app image, deploy it on dockerhub and on github pages
 
-name: Docker Image CI
+name: Build, push Docker Image CI and Deploy app on Github Pages
 
 on:
   push:
