@@ -1,4 +1,4 @@
-# This workflow will build a static web app image using docker and deploy it on dockerhub
+# This workflow will build a static web app image, deploy it on dockerhub and on github pages
 
 name: Docker Image CI
 
@@ -26,3 +26,9 @@ jobs:
         dockerfile: Dockerfile
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
+
+    -  uses: peaceiris/actions-gh-pages@v3
+       name: Deploy on Github pages
+       with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./src
