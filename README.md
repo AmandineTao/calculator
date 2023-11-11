@@ -15,6 +15,7 @@ This is a simple web-based calculator that allows users to perform basic arithme
 2. Open the `index.html` file in a web browser.
 3. Use the calculator interface to perform calculations and conversions.
 
+
 ## Instructions
 
 - **Input Display:** Displays the entered numbers and operations.
@@ -22,14 +23,38 @@ This is a simple web-based calculator that allows users to perform basic arithme
 - **Buttons:**
   - `C`: Clear the entire display.
   - `←`: Delete the last entered character.
-  - `On/Off`: Power on or off the calculator.
-  - `Bin`, `Hexa`, `Octal`: Convert the entered decimal number to the selected format (binary, hexadecimal, octal).
+  - `bin`, `hexa`, `octal`: Convert the entered decimal number to the selected format (binary, hexadecimal, octal).
   - `x^`: Enter the power of a number.
+    
+## Docker Configuration
+
+### Dockerfile
+
+The Dockerfile provided in the root directory of the project enables you to containerize the app for easy deployment.
+
+### Building the Docker Image
+
+To build the Docker image, use the following command:
+
+```bash
+docker build -t calculator-web-app .
+
+
+###  GitHub Actions Workflow
+A GitHub Actions workflow has been set up to automate the build and test processes for the Docker image.
+And also deploy the app on github pages.
+
+### Workflow Configuration
+The workflow is defined in .github/workflows/main.yml:
+
 
 ## Technologies Used
 
 - HTML
 - CSS
 - JavaScript
+- Docker
+- Github actions
+- Github pages
 
 
