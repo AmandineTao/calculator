@@ -91,6 +91,6 @@ Here jobs are defined to perfom the following tasks:
 - Github actions, pages
 
 
-Acknowledgments
+## Acknowledgments
 This project is intended as a simple demonstration and can be extended with additional features and enhancements as needed.
 
