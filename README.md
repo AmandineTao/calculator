@@ -21,10 +21,12 @@ This is a simple web-based calculator that allows users to perform basic arithme
 - **Input Display:** Displays the entered numbers and operations.
 - **Result Display:** Shows the calculated result or converted value.
 - **Buttons:**
+  - `CE`: Clear the result display.
   - `C`: Clear the entire display.
   - `←`: Delete the last entered character.
   - `bin`, `hexa`, `octal`: Convert the entered decimal number to the selected format (binary, hexadecimal, octal).
   - `x^`: Enter the power of a number.
+  - `result in`: Print result in input display. And use to start new operation.
     
 ## Docker Configuration
 
@@ -54,7 +56,7 @@ The workflow is defined in .github/workflows/main.yml:
 - CSS
 - JavaScript
 - Docker
-- Github actions
-- Github pages
+- Github actions, pages
+
 
 
