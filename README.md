@@ -40,11 +40,11 @@ To build the Docker image, use the following command:
 
 ```bash
 docker build -t calculator-web-app .
+```
 
-
-###  GitHub Actions Workflow
-A GitHub Actions workflow has been set up to automate the build and test processes for the Docker image.
-And also deploy the app on github pages.
+##  GitHub Actions Workflow
+A GitHub Actions workflow has been set up to automate the build and test processes for the Docker image. It also deploy the app on github pages. So the app can be used through the following link:
+    https://amandinetao.github.io/calculator/
 
 ### Workflow Configuration
 The workflow is defined in .github/workflows/main.yml:
