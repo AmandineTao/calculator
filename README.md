@@ -1,6 +1,6 @@
 # Calculator Web App
 
-This is a simple web-based calculator that allows users to perform basic arithmetic operations and convert decimal numbers to binary, hexadecimal, and octal formats.
+This is a simple web-based [calculator](https://amandinetao.github.io/calculator/) that allows users to perform basic arithmetic operations and convert decimal numbers to binary, hexadecimal, and octal formats.
 
 ## Features
 
@@ -43,7 +43,7 @@ docker build -t calculator-web-app .
 ```
 
 ##  GitHub Actions Workflow
-A GitHub Actions workflow has been set up to automate the build and test processes for the Docker image. It also deploy the app on github pages. So the app can be used through the following link:
+A GitHub Actions workflow has been set up to automate the build and test processes for the Docker image. It also deploy the app on github pages:
 [calculator](https://amandinetao.github.io/calculator/)
 
     
