@@ -2,6 +2,10 @@ let inputDisplay = document.getElementById('inputDisplay');
 let resultDisplay = document.getElementById('resultDisplay');
 
 function appendToDisplay(value) {
+    if (inputDisplay.value === '' && '+-*/.'.includes(value)) {
+        // Do not allow '+', '-', '*', '/', or '^' as the first input
+        return;
+    }
     inputDisplay.value += value;
 }
 
@@ -33,6 +37,10 @@ function calculate() {
 
 
 function computePower() {
+    if (inputDisplay.value === '' && '^'.includes(value)) {
+        // Do not allow '^' as the first input
+        return;
+    }
     inputDisplay.value += "^";
 }
 
