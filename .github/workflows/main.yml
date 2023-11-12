@@ -1,4 +1,4 @@
-# This workflow will build app image & deploy it on dockerhubs, and deploy app on Github pages. 
+# This workflow will build app image & deploy it on dockerhub, and deploy app on Github pages. 
 
 name: calculator web app CI/CD
 
@@ -16,6 +16,7 @@ jobs:
 
   build-deploy:
     name: build and deploy
+
     runs-on: ubuntu-latest
     permissions:
       contents: write

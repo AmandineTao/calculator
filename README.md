@@ -41,7 +41,13 @@ To build the Docker image, use the following command:
 ```bash
 docker build -t calculator-web-app .
 ```
+
 This image can be use to run the calculator on a Docker container.
+
+
+##  GitHub Actions Workflow
+A GitHub Actions workflow has been set up to automate the build and test processes for the Docker image. It also deploy the app on github pages:
+[calculator](https://amandinetao.github.io/calculator/)
 
 
 ### Running the Calculator from DockerHub
