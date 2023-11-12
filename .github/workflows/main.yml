@@ -1,6 +1,6 @@
-# This workflow will build a static web app image, deploy it on dockerhub and on github pages
+# This workflow will deploy app on Github pages, build app image and deploy it on dockerhubs
 
-name: Build, push Docker Image CI and Deploy app on Github Pages
+name: Build and Deploy on dockerhub & Github Pages
 
 on:
   push:
@@ -10,7 +10,7 @@ on:
 
 jobs:
 
-  build:
+  deploy:
 
     runs-on: ubuntu-latest
     permissions:
@@ -26,7 +26,7 @@ jobs:
           publish_dir: ./src
           
     - uses: mr-smithers-excellent/docker-build-push@v6
-      name: Build and Push Docker Image on dockerhub
+      name: Build and Deploy Docker Image on dockerhub
       with:
         image: matao39/calculator
         tags: ${{ secrets.CALCULATOR_TAG }} 
