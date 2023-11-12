@@ -29,7 +29,7 @@ jobs:
       name: Build and Push Docker Image on dockerhub
       with:
         image: matao39/calculator
-        tags: v1
+        tags: ${{ secrets.CALCULATOR_TAG }} 
         registry: docker.io
         dockerfile: Dockerfile
         username: ${{ secrets.DOCKER_USERNAME }}
