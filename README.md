@@ -44,10 +44,8 @@ docker build -t calculator-web-app .
 
 ##  GitHub Actions Workflow
 A GitHub Actions workflow has been set up to automate the build and test processes for the Docker image. It also deploy the app on github pages. So the app can be used through the following link:
-
-```bash
 [calculator](https://amandinetao.github.io/calculator/)
-```
+
     
 
 ### Workflow Configuration
